@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
+	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
@@ -48,6 +49,8 @@ type App struct {
 
 	// Logging config
 	Logging []LoggerCfg
+
+	HTTPMiddlewareFuncs []mux.MiddlewareFunc
 }
 
 // LoggerCfg represents a configuration of an individual logger.

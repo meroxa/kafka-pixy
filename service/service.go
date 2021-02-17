@@ -54,7 +54,7 @@ func Spawn(cfg *config.App) (*T, error) {
 		s.servers = append(s.servers, grpcSrv)
 	}
 	if cfg.TCPAddr != "" {
-		tcpSrv, err := httpsrv.New(cfg.TCPAddr, proxySet, cfg.TLS.CertPath, cfg.TLS.KeyPath)
+		tcpSrv, err := httpsrv.New(cfg.TCPAddr, cfg.HTTPMiddlewareFuncs, proxySet, cfg.TLS.CertPath, cfg.TLS.KeyPath)
 		if err != nil {
 			s.stopProxies()
 			return nil, errors.Wrap(err, "failed to start TCP socket based HTTP API server")
@@ -62,7 +62,7 @@ func Spawn(cfg *config.App) (*T, error) {
 		s.servers = append(s.servers, tcpSrv)
 	}
 	if cfg.UnixAddr != "" {
-		unixSrv, err := httpsrv.New(cfg.UnixAddr, proxySet, "", "")
+		unixSrv, err := httpsrv.New(cfg.UnixAddr, cfg.HTTPMiddlewareFuncs, proxySet, "", "")
 		if err != nil {
 			s.stopProxies()
 			return nil, errors.Wrapf(err, "failed to start Unix socket based HTTP API server")

@@ -82,7 +82,7 @@ func init() {
 //
 // It also passes in the provided certificate and key paths for TLS. If
 // empty strings, it is run in non-TLS mode.
-func New(addr string, proxySet *proxy.Set, certPath, keyPath string) (*T, error) {
+func New(addr string, m []mux.MiddlewareFunc, proxySet *proxy.Set, certPath, keyPath string) (*T, error) {
 	network := networkUnix
 	if strings.Contains(addr, ":") {
 		network = networkTCP
@@ -100,6 +100,10 @@ func New(addr string, proxySet *proxy.Set, certPath, keyPath string) (*T, error)
 	}
 	// Create a graceful HTTP server instance.
 	router := mux.NewRouter()
+	for _, mm := range m {
+		router.Use(mm)
+	}
+
 	httpServer := &http.Server{Handler: router}
 
 	hs := &T{
