@@ -51,6 +51,7 @@ type App struct {
 	Logging []LoggerCfg
 
 	HTTPMiddlewareFuncs []mux.MiddlewareFunc
+	GRPCServerOpts      []grpc.ServerOption
 }
 
 // LoggerCfg represents a configuration of an individual logger.

@@ -41,12 +41,15 @@ func Spawn(cfg *config.App) (*T, error) {
 	proxySet := proxy.NewSet(s.proxies, s.proxies[cfg.DefaultCluster])
 
 	if cfg.GRPCAddr != "" {
+		opts := cfg.GRPCServerOpts
 		securityOpts, err := cfg.GRPCSecurityOpts()
 		if err != nil {
 			s.stopProxies()
 			return nil, errors.Wrap(err, "failed to configure gRPC security")
 		}
-		grpcSrv, err := grpcsrv.New(cfg.GRPCAddr, proxySet, securityOpts...)
+		opts = append(opts, securityOpts...)
+
+		grpcSrv, err := grpcsrv.New(cfg.GRPCAddr, proxySet, opts...)
 		if err != nil {
 			s.stopProxies()
 			return nil, errors.Wrap(err, "failed to start gRPC server")
