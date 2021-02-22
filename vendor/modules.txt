@@ -1,8 +1,10 @@
 # github.com/DataDog/zstd v1.3.6-0.20190409195224-796139022798
 github.com/DataDog/zstd
 # github.com/Shopify/sarama v1.23.1
+## explicit
 github.com/Shopify/sarama
 # github.com/davecgh/go-spew v1.1.1
+## explicit
 github.com/davecgh/go-spew/spew
 # github.com/eapache/go-resiliency v1.1.0
 github.com/eapache/go-resiliency/breaker
@@ -11,12 +13,15 @@ github.com/eapache/go-xerial-snappy
 # github.com/eapache/queue v1.1.0
 github.com/eapache/queue
 # github.com/fatih/structs v1.1.0
+## explicit
 github.com/fatih/structs
 # github.com/fsnotify/fsnotify v1.4.7
 github.com/fsnotify/fsnotify
 # github.com/go-ini/ini v1.46.0
+## explicit
 github.com/go-ini/ini
 # github.com/golang/protobuf v1.3.2
+## explicit
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/ptypes
 github.com/golang/protobuf/ptypes/any
@@ -25,6 +30,7 @@ github.com/golang/protobuf/ptypes/timestamp
 # github.com/golang/snappy v0.0.1
 github.com/golang/snappy
 # github.com/gorilla/mux v1.7.3
+## explicit
 github.com/gorilla/mux
 # github.com/hashicorp/go-uuid v1.0.1
 github.com/hashicorp/go-uuid
@@ -38,46 +44,63 @@ github.com/kr/pretty
 # github.com/kr/text v0.1.0
 github.com/kr/text
 # github.com/mailgun/holster v3.0.0+incompatible
+## explicit
 github.com/mailgun/holster/clock
 github.com/mailgun/holster/errors
 github.com/mailgun/holster/stack
 # github.com/mailgun/holster/v3 v3.8.0
+## explicit
 github.com/mailgun/holster/v3/callstack
 github.com/mailgun/holster/v3/errors
 github.com/mailgun/holster/v3/setter
 # github.com/mailgun/logrus-hooks v1.2.1
+## explicit
 github.com/mailgun/logrus-hooks/common
 github.com/mailgun/logrus-hooks/kafkahook
 github.com/mailgun/logrus-hooks/levelfilter
 # github.com/mailru/easyjson v0.0.0-20190626092158-b2ccc519800e
+## explicit
 github.com/mailru/easyjson
 github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
+# github.com/onsi/ginkgo v1.9.0
+## explicit
+# github.com/onsi/gomega v1.6.0
+## explicit
 # github.com/pierrec/lz4 v0.0.0-20190327172049-315a67e90e41
 github.com/pierrec/lz4
 github.com/pierrec/lz4/internal/xxh32
 # github.com/pkg/errors v0.8.1
+## explicit
 github.com/pkg/errors
 # github.com/pmezard/go-difflib v1.0.0
 github.com/pmezard/go-difflib/difflib
 # github.com/rcrowley/go-metrics v0.0.0-20181016184325-3113b8401b8a
 github.com/rcrowley/go-metrics
 # github.com/samuel/go-zookeeper v0.0.0-20190810000440-0ceca61e4d75
+## explicit
 github.com/samuel/go-zookeeper/zk
 # github.com/sirupsen/logrus v1.4.2
+## explicit
 github.com/sirupsen/logrus
 github.com/sirupsen/logrus/hooks/syslog
+# github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337
+## explicit
 # github.com/spf13/cast v1.3.0
+## explicit
 github.com/spf13/cast
 # github.com/stretchr/testify v1.4.0
+## explicit
 github.com/stretchr/testify/assert
 # github.com/thrawn01/args v0.3.0
+## explicit
 github.com/thrawn01/args
 # golang.org/x/crypto v0.0.0-20190404164418-38d8ce5564a5
 golang.org/x/crypto/md4
 golang.org/x/crypto/pbkdf2
 # golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+## explicit
 golang.org/x/net/context
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
@@ -97,6 +120,7 @@ golang.org/x/text/unicode/norm
 # google.golang.org/genproto v0.0.0-20180817151627-c66870c02cf8
 google.golang.org/genproto/googleapis/rpc/status
 # google.golang.org/grpc v1.23.0
+## explicit
 google.golang.org/grpc
 google.golang.org/grpc/balancer
 google.golang.org/grpc/balancer/base
@@ -131,11 +155,16 @@ google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
 # gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
+## explicit
 gopkg.in/check.v1
+# gopkg.in/ini.v1 v1.46.0
+## explicit
 # gopkg.in/jcmturner/aescts.v1 v1.0.1
 gopkg.in/jcmturner/aescts.v1
 # gopkg.in/jcmturner/dnsutils.v1 v1.0.1
 gopkg.in/jcmturner/dnsutils.v1
+# gopkg.in/jcmturner/goidentity.v3 v3.0.0
+## explicit
 # gopkg.in/jcmturner/gokrb5.v7 v7.2.3
 gopkg.in/jcmturner/gokrb5.v7/asn1tools
 gopkg.in/jcmturner/gokrb5.v7/client
@@ -171,4 +200,5 @@ gopkg.in/jcmturner/gokrb5.v7/types
 gopkg.in/jcmturner/rpc.v1/mstypes
 gopkg.in/jcmturner/rpc.v1/ndr
 # gopkg.in/yaml.v2 v2.2.2
+## explicit
 gopkg.in/yaml.v2
