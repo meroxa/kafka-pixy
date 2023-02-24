@@ -96,10 +96,10 @@ github.com/stretchr/testify/assert
 # github.com/thrawn01/args v0.3.0
 ## explicit
 github.com/thrawn01/args
-# golang.org/x/crypto v0.0.0-20190404164418-38d8ce5564a5
+# golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
 golang.org/x/crypto/md4
 golang.org/x/crypto/pbkdf2
-# golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+# golang.org/x/net v0.7.0
 ## explicit
 golang.org/x/net/context
 golang.org/x/net/http/httpguts
@@ -110,9 +110,9 @@ golang.org/x/net/internal/socks
 golang.org/x/net/internal/timeseries
 golang.org/x/net/proxy
 golang.org/x/net/trace
-# golang.org/x/sys v0.0.0-20190801041406-cbf593c0f2f3
+# golang.org/x/sys v0.5.0
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.0
+# golang.org/x/text v0.7.0
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi

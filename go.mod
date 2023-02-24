@@ -22,7 +22,7 @@ require (
 	github.com/spf13/cast v1.3.0 // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/thrawn01/args v0.3.0
-	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+	golang.org/x/net v0.7.0
 	google.golang.org/grpc v1.23.0
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
 	gopkg.in/ini.v1 v1.46.0 // indirect
